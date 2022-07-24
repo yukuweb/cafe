@@ -1,0 +1,233 @@
+/* Google Fontsの読み込み */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&family=Shippori+Mincho+B1:wght@400;600&display=swap');
+
+
+/* 全体のスタイル */
+body {
+	background-color: #fcfcfc;
+	color: #333;
+	font-family: 'Atkinson Hyperlegible', 'Shippori Mincho B1', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+
+/* スムーススクロール */
+html {
+	scroll-behavior: smooth;
+}
+
+
+/* インナー */
+.inner {
+	width: 90%;
+	max-width: 1080px;
+	height: inherit;
+	padding: 0;
+	margin: 0 auto;
+}
+
+
+/* 見出し */
+.heading {
+	position: relative;
+	font-size: 36px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.heading::after {
+	position: absolute;
+	bottom: -4px;
+	left: 50%;
+	width: 100px;
+	height: 4px;
+	content: "";
+	background-color: #0e495f;
+	transform: translateX(-50%);
+}
+
+
+/* ヘッダー */
+.header {
+	height: 100px;
+	background-color: #0e495f;
+}
+
+.header-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: inherit;
+}
+
+.header-logo a {
+	transition: opacity 300ms ease-out;
+}
+
+.header-logo a:hover {
+	opacity: 0.8;
+}
+
+.header-logo img {
+	width: 72px;
+}
+
+.header-nav ul {
+	display: flex;
+	-moz-column-gap: 40px;
+	column-gap: 40px;
+	align-items: center;
+}
+
+.header-nav a {
+	display: block;
+	font-size: 20px;
+	font-weight: 700;
+	color: #fcfcfc;
+	transition: opacity 300ms ease-out;
+}
+
+.header-nav a:hover {
+	opacity: 0.8;
+}
+
+.header-nav-btn a {
+	width: 200px;
+	height: 60px;
+	line-height: 60px;
+	color: #0e495f;
+	text-align: center;
+	background-color: #fcfcfc;
+	border-radius: 30px;
+}
+
+
+/* メインビジュアル */
+.mv {
+	height: calc(100vh - 100px);
+	background-image: url("../img/mv.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.mv .inner {
+	position: relative;
+}
+
+.mv h1 {
+	position: absolute;
+	right: 0;
+	bottom: 15.7407407407vh;
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 1;
+	color: #fcfcfc;
+	text-align: right;
+}
+
+.mv h1 span {
+	position: relative;
+	display: block;
+	font-size: 36px;
+	font-weight: 600;
+}
+
+.mv h1 span::before {
+	position: absolute;
+	top: -4px;
+	right: 0;
+	width: 100vw;
+	height: 4px;
+	content: "";
+	background-color: #fcfcfc;
+}
+
+
+/* MENU */
+.menu {
+	padding: 120px 0;
+	background-color: #a6c5d1;
+}
+
+.menu-list {
+	display: flex;
+	column-gap: 60px;
+	margin-top: 64px;
+}
+
+.menu-item {
+	text-align: center;
+}
+
+.menu-item img {
+	max-width: 100%;
+}
+
+.menu-item h3 {
+	margin-top: 16px;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.menu-item p {
+	margin-top: 4px;
+}
+
+
+/* TAKE OUT */
+.takeout {
+	padding: 120px 0;
+}
+
+.takeout-img {
+	margin-top: 64px;
+	text-align: center;
+}
+
+.takeout-img img {
+	max-width: 100%;
+}
+
+.takeout-btn {
+	margin-top: 40px;
+	text-align: center;
+}
+
+.takeout-btn a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	height: 60px;
+	font-size: 20px;
+	font-weight: 700;
+	border: 2px solid #333;
+	transition: color 300ms ease-out, background-color 300ms ease-out;
+}
+
+.takeout-btn a:hover {
+	color: #fcfcfc;
+	background-color: #333;
+}
+
+
+/* フッター */
+.footer {
+	padding: 32px 0;
+	background-color: #0e495f;
+}
+
+.footer-copy {
+	font-size: 12px;
+	font-weight: 700;
+	color: #fcfcfc;
+	text-align: center;
+}
+
+
+/* 非表示 */
+.hidden-pc {
+	display: none;
+}

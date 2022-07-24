@@ -1,0 +1,52 @@
+/* 767px以下から適用されるスタイル */
+@media (max-width: 767px) {
+  /* ヘッダー */
+  .header {
+    height: 80px;
+  }
+
+  .header-logo img {
+    width: 48px;
+  }
+
+
+  /* メインビジュアル */
+  .mv {
+    height: calc(100vh - 80px);
+  }
+
+  .mv h1 {
+		font-size: 40px;
+	}
+
+	.mv h1 span {
+		font-size: 18px;
+	}
+
+
+  /* MENU */
+  .menu {
+    padding: 80px 0;
+  }
+
+  .menu-list {
+		flex-direction: column;
+		row-gap: 60px;
+	}
+
+
+  /* TAKE OUT */
+  .takeout {
+    padding: 80px 0;
+  }
+
+
+  /* 非表示 */
+  .hidden-pc {
+    display: block;
+  }
+
+  .hidden-sp {
+    display: none;
+  }
+}
